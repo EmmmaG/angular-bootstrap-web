@@ -1,0 +1,15 @@
+.about-content {
+    margin: 20px
+}
+.ptb-100 {
+    padding: 50px 0 100px 0;
+}
+.about-us-content p {
+    line-height: 32px;
+    margin-bottom: 30px;
+}
+.about-us-content h2 {
+    font-size: 24px;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}

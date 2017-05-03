@@ -1,0 +1,35 @@
+<!-- Right Side Start -->
+						<div class="col-md-9 col-sm-12" *ngFor="let blogItem of blogDatas" >
+							<div class="blog-left-single mb-30 res-mb-30 res-mb-sm-30 res-blog-mt-50">
+								<div class="blg-img">
+									<img [src]="blogItem.url" alt="" />
+									<a class="icon_link"></a>
+								</div>
+								<div class="blog-content">
+									<div class="date-athr">
+										<span class="icon_profile "></span>
+										<h6>eyeshadow box</h6>
+										<span class="date">{{blogItem.date}}</span>
+									</div>
+									<div class="blog-content-text">
+										<h4><a (click)="goDetails(blogItem)">{{blogItem.name}}</a></h4>
+										<p>{{blogItem.introduce}}</p>
+										<a href="#">read more<span class="icon-left" data-icon="&#x24;"></span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Right Side End -->
+						<!-- Page Pagination Start -->
+						<div class="col-md-12 col-sm-12">
+							<div class="page-pagination text-center pt-55 res-tb-25">
+								<ul>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li class="next"><a href="#"><span class="icon-left" data-icon="&#x24;"></span></a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Page Pagination End -->

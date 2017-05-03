@@ -1,0 +1,64 @@
+<div class="col-md-9">
+							<div class="blog-details-area">
+								<div class="blog-left-single mb-30 res-mb-30 res-mb-sm-30 res-blog-mt-50">
+									<div class="blg-img">
+										<img src="../assets/img/blog/blog-details.jpg" alt="" />
+										<a href="#" class="icon_link"></a>
+									</div>
+									<div class="blog-content">
+										<div class="date-athr">
+											<span class="icon_profile "></span>
+											<h6>aeyeshadow box</h6>
+											<span class="date">{{blogData.date}}</span>
+										</div>
+										<div class="blog-content-text">
+											<h4><a href="blog-details.html">{{blogData.name}}</a></h4>
+											<p>{{blogData.introduce}}</p>
+											<p>{{blogData.introduce}}</p>
+											<a>read more<span class="icon-left" data-icon="&#x24;"></span></a>
+										</div>
+									</div>
+								</div>
+								<div class="reply-comment-area">
+									<h3>3 comments</h3>
+									<div class="single-reply" [class.user-comment]="blogCommentItem.userComment" *ngFor="let blogCommentItem of blogDatas">
+										<div class="comment-author">
+											<img alt="" [src]="blogCommentItem.url">
+										</div>
+										<div class="comment-info">
+											<div class="comment-author-info">
+												<a href="#"><b>{{blogCommentItem.user}}</b></a>
+												Post author
+												<span>{{blogCommentItem.date}}</span>
+												<a href="#">Reply</a>
+											</div>
+											<p>{{blogCommentItem.content}}</p>
+										</div>
+									</div>
+								</div>
+								<div class="user-comment-form-area">
+									<h3>Leave a Reply</h3>
+									<div class="contact">
+										<p>Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+										<form class="form" name="enq" method="post" action="mail.php">
+											<div class="row">
+												<div class="form-group col-md-6">
+													<input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required" #newName>
+												</div>
+												<div class="form-group col-md-6">
+													<input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required" #newEmail>
+												</div>
+												<div class="form-group col-md-12 mbnone">
+													<textarea rows="7" name="message" class="form-control" id="description" placeholder="Your Message" required="required" #newMessage></textarea>
+												</div>
+												<div class="col-md-12">
+													<div class="actions">
+														<input value="Send message" name="submit" class="btn btn-lg btn-contact-bg" title="Submit Your Message!" (click)="addComment(newName.value,newEmail.value,newMessage.value); newName.value=''">
+													</div>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
