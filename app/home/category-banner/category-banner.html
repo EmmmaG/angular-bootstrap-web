@@ -1,0 +1,16 @@
+<section class="category-banner pb-65 pt-50">
+				<div class="container">
+					<div class="row">
+						<!-- Category Banner Single -->
+						<div class="col-md-4 col-sm-4 col-xs-12 res-mb-25" *ngFor="let categoryBannerItem of categoryBannerDatas ">
+							<div class="cate-bnr-sngle">
+								<img [src]="categoryBannerItem.url" alt="" />
+								<div class="cate-content text-center">
+									<h6>{{categoryBannerItem.name}}</h6>
+									<a [routerLink]="['/singleProduct', categoryBannerItem.id]">shop now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>

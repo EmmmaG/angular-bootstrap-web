@@ -1,0 +1,142 @@
+<div class="container">
+				<div class="row">
+					<div class="content-full pt-50 pb-55 fix">
+						<div class="col-md-12">
+							<!--NAV PILL-->
+							<div class="shop-tab-pill">
+								<div class="nav-menu-grid">
+									<ul class="nav nav-pills">
+										<li [class.active]="tabShowCtrl">
+											<a data-toggle="pill" ><i (click)="changeTab(1)" class="icon_grid-2x2"></i></a>
+										</li>
+										<li [class.active]="!tabShowCtrl">
+											<a data-toggle="pill" ><i (click)="changeTab(0)" class="icon_menu"></i></a>
+										</li>
+									</ul>
+								</div>
+								<div class="show-more text-center">
+									<h6>250 products Found</h6>
+									<ul>
+										<li class="shw">Show</li>
+										<li [class.active]="showNumber.active" (click)="changeNumber(showNumber)" *ngFor="let showNumber of showNumbers">
+											<a>{{showNumber.number}}</a>
+										</li>
+									</ul>
+								</div>
+								<div class="sorting text-right">
+									<a href="#">Default Sorting<span class="icon-left" data-icon="$"></span></a>
+								</div>
+							</div>
+							<!-- NAV PILL -->
+						</div>
+						<!-- Left Side Start -->
+						<div class="col-md-12">
+							<div class="tab-content">
+								<div id="grid" class="shop-left pt-35 tab-pane fade" [ngClass]="currentClasses" >
+									<div class="shop-tab-area">
+										<div class="row">
+											<!-- Single Product Start -->
+											<div class="col-md-4 col-sm-6" *ngFor="let productItem of productDatas">
+												<div class="single-product style-two mb-50">
+													<div class="single-img">
+														<a href="#"><img [src]="productItem.url" alt=""></a>
+														<span class="pro-level" *ngIf="productItem.sale">Sale</span>
+														<span class="pro-level" *ngIf="productItem.new">New</span>
+														<div class="hover-content text-center">
+															<ul>
+																<li><a class="icon_refresh"></a></li>
+																<li><a class="icon_cart_alt "></a></li>
+																<li><a class="icon_heart_alt"></a></li>
+																<li>
+																	<a title="Quick View" data-toggle="modal" data-target="#productModal" class="icon_search" (click)="showModal(productItem)" ></a>
+																</li>
+															</ul>
+														</div>
+													</div>
+													<div class="product-details mt-20">
+														<h4><a (click)="goProcduct(productItem)">{{productItem.name}}</a><span>{{productItem.smallName}}</span></h4>
+														<div class="rating-box">
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+															<i class="fa fa-star"></i>
+														</div>
+														<div class="price-box">
+															<span class="old-price">{{productItem.oldPrice}}</span>
+															<span class="new-price"> - {{productItem.newPrice}}</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="list" class="shop-right pt-35 pb-55 tab-pane fade" [ngClass]="currentClasses1" >
+									<div class="row">
+										<!-- Single product -->
+										<div class="col-md-12" *ngFor="let productItem of productDatas ">
+											<div class="blog-single mb-50">
+												<div class="blog-img">
+													<img [src]="productItem.url" alt="">
+													<a href="#" class="icon_link"></a>
+													<span class="pro-level" *ngIf="productItem.sale">Sale</span>
+													<span class="pro-level" *ngIf="productItem.new">New</span>
+												</div>
+												<div class="product-contnt">
+													<div class="product-info">
+														<div class="pro-titel">
+															<span>{{productItem.smallName }}</span>
+															<h4><a (click)="goProcduct(productItem)">{{productItem.name}}</a></h4>
+														</div>
+														<div class="pro-rate text-right">
+															<div class="rating-box">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</div>
+															<div class="price-box">
+																<span class="old-price">{{productItem.oldPrice}}</span>
+																<span class="new-price"> - {{productItem.newPrice}}</span>
+															</div>
+														</div>
+													</div>
+													<div class="pro-text">
+														<p>Lorem ipsum dolor tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc tation ullamco labori ut aliquip ex ea commodo consequat.</p>
+													</div>
+													<div class="pro-social-cart">
+														<ul>
+															<li><a href="#" class="icon_refresh"></a></li>
+															<li><a href="#" class="icon_heart_alt"></a></li>
+															<li>
+																<a title="Quick View" data-toggle="modal" data-target="#productModal" class="icon_search" (click)="showModal(productItem)" ></a>
+															</li>
+														</ul>
+														<div class="pro-cart">
+															<a href="#">Add To Cart <span class="icon-left" data-icon="$"></span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Left Side End -->
+						<!-- Page Pagination Start -->
+						<div class="col-md-12">
+							<div class="page-pagination text-center">
+								<ul>
+									<li [class.active]="pagination.active" *ngFor="let pagination of paginationLength" (click)="changePagination(pagination)"><a>{{pagination.id}}</a></li>
+								</ul>
+							</div>
+						</div>
+						<!-- Page Pagination End -->
+					</div>
+				</div>
+			</div>
+
+			<modal [modalData]="modalData" *ngIf="modalData" (colseFatherModal)="colseFatherModal()"></modal>

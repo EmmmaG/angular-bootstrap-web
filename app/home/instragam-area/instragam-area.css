@@ -1,0 +1,48 @@
+.instragam-area .col-md-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.instragam-single a img{
+  width: 100%;
+}
+.instragam-main a{
+  display: block;
+  position: relative;
+}
+.instragam-content {
+  background: rgba(0, 0, 0, 0.4) none repeat scroll 0 0;
+  height: 100%;
+  padding-top: 108px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity:0;
+  transition:.4s;
+}
+.instragam-single:hover .instragam-content{opacity:1;}
+.instragam-content a i {
+  display: block;
+  font-size: 40px;
+  overflow: hidden;
+  color:#fff;
+}
+.instragam-content > span {
+  color: #8bc34a;
+  display: block;
+  font-family: open sans;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.instragam-content > h3 {
+  font-weight: 800;
+  margin-bottom: 112px;
+  color:#fff;
+}
+.instragam-content > a {
+  color: #8bc34a;
+  font-size: 14px;
+}
+.instragam-content > a:hover{color:#fff;}
+.instragam-content a i:hover{color:#8bc34a;}

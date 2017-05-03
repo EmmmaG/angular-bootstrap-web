@@ -1,0 +1,25 @@
+<section class="onslepro-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 res-mb-sm-30" *ngFor="let onsleproAreaItem of onsleproAreaDatas">
+                <div class="on-sale-heading">
+                    <h3>{{onsleproAreaItem.name}}</h3>
+                </div>
+                <!--On Sale Product Single-->
+                <div class="onsale-single mb-30" *ngFor="let item of onsleproAreaItem.options">
+                    <div class="onsale-img">
+                        <img [src]="item.optionUrl" alt="" />
+                    </div>
+                    <div class="onsale-content">
+                        <span>{{item.optionType}}</span>
+                        <h6><a>{{item.optionName}}</a></h6>
+                        <div class="price-box">
+                            <span class="old-price">{{item.optionOldPrice}}</span>
+                            <span class="new-price">{{item.optionNewPrice}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

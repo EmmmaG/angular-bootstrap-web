@@ -1,0 +1,52 @@
+<div id="list" class="shop-right pt-35 tab-pane fade  in active">
+									<div class="row">
+										<!-- Single product -->
+										<div class="col-md-12" *ngFor="let productItem of productDatas">
+											<div class="blog-single mb-50">
+												<div class="blog-img">
+													<img [src]="productItem.url" alt="" />
+													<a routerLink="/singleProduct/productItem.id" class="icon_link"></a>
+													<span class="pro-level" *ngIf="productItem.sale">Sale</span>
+												    <span class="pro-level" *ngIf="productItem.new">New</span>
+												</div>
+												<div class="product-contnt">
+													<div class="product-info">
+														<div class="pro-titel">
+															<span>{{productItem.smallName}}</span>
+															<h4><a (click)="goProcduct(productItem)">{{productItem.name}}</a></h4>
+														</div>
+														<div class="pro-rate text-right">
+															<div class="rating-box">
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+																<i class="fa fa-star"></i>
+															</div>
+															<div class="price-box">
+																<span class="old-price">{{productItem.oldPrice}}</span>
+															<span class="new-price"> - {{productItem.newPrice}}</span>
+															</div>
+														</div>
+													</div>
+													<div class="pro-text">
+														<p>{{productItem.introduce}}</p>
+													</div>
+													<div class="pro-social-cart">
+														<ul>
+															<li><a href="#" class="icon_refresh"></a></li>
+															<li><a href="#" class="icon_heart_alt"></a></li>
+															<li>
+																<a title="Quick View" data-toggle="modal" data-target="#productModal" class="icon_search" (click)="showModal(productItem)"></a>
+															</li>
+														</ul>
+														<div class="pro-cart">
+															<a href="#">Add To Cart <span class="icon-left" data-icon="&#x24;"></span></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+									<modal [modalData]="modalData" *ngIf="modalData" (colseFatherModal)="colseFatherModal()"></modal>

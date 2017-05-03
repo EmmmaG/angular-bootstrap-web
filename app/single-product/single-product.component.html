@@ -1,0 +1,265 @@
+<section class="page-content-wrapper ptb-100">
+			<!-- Single Product Top Info Start -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="breadcrumbs mb-40">
+							<ul>
+								<li class="home">
+									<a title="Go to Home Page" (click)="goHome()">Home</a>
+									<span class="arrow_carrot-right"></span>
+								</li>
+								<li class="home">
+									<a title="Go to Product page" (click)="goShop()">Single Product</a>
+									<span class="arrow_carrot-right"></span>
+								</li>
+								<li class="category3">
+									<span>{{productData.name}}</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="singlepro-left">
+							<div class="pro-img-tab-content tab-content">
+								<div class="tab-pane active" id="image-1">
+									<div class="simpleLens-big-image-container">
+										<a class="simpleLens-lens-image" data-lightbox="roadtrip" data-lens-image="img/single-product/1.jpg" >
+											<img [src]="productData.url" alt="" class="simpleLens-big-image">
+										</a>
+									</div>
+								</div>
+								<!-- <div class="tab-pane" id="image-2">
+									<div class="simpleLens-big-image-container">
+										<a class="simpleLens-lens-image" data-lightbox="roadtrip" data-lens-image="img/single-product/2.jpg" >
+											<img src="../assets/img/single-product/2.jpg" alt="" class="simpleLens-big-image">
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="image-3">
+									<div class="simpleLens-big-image-container">
+										<a class="simpleLens-lens-image" data-lightbox="roadtrip" data-lens-image="img/single-product/3.jpg" >
+											<img src="../assets/img/single-product/3.jpg" alt="" class="simpleLens-big-image">
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="image-4">
+									<div class="simpleLens-big-image-container">
+										<a class="simpleLens-lens-image" data-lightbox="roadtrip" data-lens-image="img/single-product/4.jpg" >
+											<img src="../assets/img/single-product/4.jpg" alt="" class="simpleLens-big-image">
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="image-5">
+									<div class="simpleLens-big-image-container">
+										<a class="simpleLens-lens-image" data-lightbox="roadtrip" data-lens-image="img/single-product/5.jpg" >
+											<img src="../assets/img/single-product/5.jpg" alt="" class="simpleLens-big-image">
+										</a>
+									</div>
+								</div>
+								<div class="tab-pane" id="image-6">
+									<div class="simpleLens-big-image-container">
+										<a class="simpleLens-lens-image" data-lightbox="roadtrip" data-lens-image="img/single-product/1.jpg" >
+											<img src="../assets/img/single-product/1.jpg" alt="" class="simpleLens-big-image">
+										</a>
+									</div>
+								</div> -->
+							</div>
+							<!-- <div class="pro-img-tab-slider indicator-style2 owl-carousel owl-theme">
+								<div class="item">
+									<a href="#image-1" data-toggle="tab"><img src="../assets/img/single-product/1-1.jpg" alt="" /></a>
+								</div>
+								<div class="item">
+									<a href="#image-2" data-toggle="tab"><img src="../assets/img/single-product/2-2.jpg" alt="" /></a>
+								</div>
+								<div class="item">
+									<a href="#image-3" data-toggle="tab"><img src="../assets/img/single-product/3-3.jpg" alt="" /></a>
+								</div>
+								<div class="item">
+									<a href="#image-4" data-toggle="tab"><img src="../assets/img/single-product/4-4.jpg" alt="" /></a>
+								</div>
+								<div class="item">
+									<a href="#image-5" data-toggle="tab"><img src="../assets/img/single-product/2-2.jpg" alt="" /></a>
+								</div>
+								<div class="item">
+									<a href="#image-6" data-toggle="tab"><img src="../assets/img/single-product/4-4.jpg" alt="" /></a>
+								</div>
+							</div> -->
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="singlepro-right">
+							<div class="snglepro-content">
+								<span>{{productData.smallName}}</span>
+								<h3><a href="single-product.html">{{productData.name}}</a></h3>
+								<div class="rating-box">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<span>3 Reviews</span>
+								</div>
+								<div class="prce-stock">
+									<h4>{{productData.newPrice}}</h4>
+									<h6>In Stock</h6>
+								</div>
+								<p>{{productData.introduce}}</p>
+								<div class="pro-info">
+									<ul>
+										<li>SKU: JQK123</li>
+										<li>Categories: Man, Shoes</li>
+										<li>Tags: shoes, man shoes, black</li>
+									</ul>
+								</div>
+								<div class="input-content mb-50">
+									<label>Quantity</label>
+									<div class="quantity">
+										<div class="cart-plus-minus">
+											<div class="dec qtybutton" (click)="buyNumberCtrl(0)">-</div>
+										    <input type="text" [(ngModel)]="buyNumber" name="qtybutton" class="cart-plus-minus-box">
+										    <div class="inc qtybutton" (click)="buyNumberCtrl(1)">+</div>
+										</div>
+									</div>
+								</div>
+								<div class="sngle-pro-socl">
+									<ul>
+										<li><a class="social_facebook"></a></li>
+										<li><a class="social_googleplus"></a></li>
+										<li><a class="social_twitter"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Single Product Top Info Start -->
+			<!-- Single Product Discription Start -->
+			<section class="pro-disciptin mt-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="p-details-tab">
+								<ul role="tablist">
+									<li role="presentation" [class.active]="showName.active" *ngFor="let showName of showNames" (click)="changeNumber(showName)">
+										<a>{{showName.name}}</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab-content review">
+								<div role="tabpanel" class="tab-pane" *ngIf="showNames[0].active" id="description">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d</p>
+								</div>
+								<div role="tabpanel" class="tab-pane" *ngIf="showNames[1].active" id="reviews">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="review-left">
+												<p> <a href="#">Hastech</a><span> Review by </span> Hastech </p>
+												<div class="review-rating">
+													<p>price</p>
+													<div class="rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</div>
+												</div>
+												<div class="review-rating">
+													<p>value</p>
+													<div class="rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</div>
+												</div>
+												<div class="review-rating">
+													<p>quality</p>
+													<div class="rating">
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+														<i class="fa fa-star"></i>
+													</div>
+												</div>
+												<p>Hastech <span class="italic">(Posted on 11/4/2015)</span></p>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="review-right">
+												<h3>You're reviewing: Tristique ut lectus</h3>
+												<h4>How do you rate this product? *</h4>
+												<form action="mail.php" method="post">
+													<div class="p-details-table table-responsive">
+														<table>
+															<thead>
+																<tr>
+																	<th></th>
+																	<th>1 star</th>
+																	<th>2 stars</th>
+																	<th>3 stars</th>
+																	<th>4 stars </th>
+																	<th>5 stars </th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<th>Price</th>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																</tr>
+																<tr>
+																	<th>Value</th>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																</tr>
+																<tr>
+																	<th>Quality</th>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																	<td><input type="radio" class="radio" value=""></td>
+																</tr>
+															</tbody>
+														</table>    
+													</div>
+												</form>    
+											</div>
+										</div>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" *ngIf="showNames[2].active" id="tags">
+									<div class="product-tag-name">
+										<form action="https://devitems.com/tf/stepre-preview/stepre/mail.php" method="post">
+											<div class="row form-top">
+												<div class="form-group col-sm-12 col-md-12 col-lg-12">
+													<label>Add Your Tags:</label>
+													<input type="text" class="form-control">
+													<a class="add-tag-btn" href="#">ADD Tags</a>
+												</div>
+											</div>
+										</form>
+										<p>Use spaces to separate tags. Use single quotes (') for phrases.</p>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane" *ngIf="showNames[3].active" id="cutomer">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum d</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<onslepro-area></onslepro-area>

@@ -1,0 +1,57 @@
+.category-banner{
+	margin-top: 70px;
+}
+.cate-bnr-sngle {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.cate-content {
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+    height: 100%;
+    padding-top: 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+    padding-top: 38%;
+}
+.cate-bnr-sngle:hover .cate-content {
+    opacity: 1;
+}
+.cate-content h6 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin: 0 0 20px;
+    transition: all 0.3s linear 0s;
+}
+.cate-content > a {
+    border: 1px solid #8bc34a;
+    color: #fff;
+    display: inline-block;
+    font-family: open sans;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: .3s;
+    font-size: 14px;
+}
+.cate-bnr-sngle img{
+width: 100%;
+}
+.pb-65 {
+    padding-bottom: 65px;
+}
+
+
+@media (max-width: 767px){
+	.res-mb-25 {
+    margin-bottom: 25px;
+}
+.category-banner{
+	margin-top: 50px;
+}
+}

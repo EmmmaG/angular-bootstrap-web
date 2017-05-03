@@ -1,0 +1,37 @@
+.on-sale-heading > h3 {
+  color: #666666;
+  font-family: open sans;
+  font-size: 20pt;
+  font-weight: 700;
+  margin: 0 0 45px;
+  text-transform:uppercase;
+}
+.onsale-img {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.onsale-single,.onsale-content {
+  display: block;
+  overflow: hidden;
+}
+.onsale-content > span {
+  color: #666666;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.onsale-content > h6 {
+  font-family: open sans;
+  font-size: 12pt;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.onsale-content .old-price {
+  color: #999999;
+  font-family: open sans;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 25px;
+}

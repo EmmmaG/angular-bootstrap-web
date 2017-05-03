@@ -1,0 +1,52 @@
+.service-top > h6 {
+  color: #8bc34a;
+  font-family: open sans;
+  font-size: 12pt;
+  font-weight: normal;
+  margin: 0 0 25px;
+}
+.service-top > h4 {
+  font-family: open sans;
+  font-size: 20pt;
+  font-weight: 700;
+  margin: 0;
+}
+.single-service span {
+  color: #8bc34a;
+  display: block;
+  font-size: 30pt;
+  margin-bottom: 35px;
+}
+.single-service h4 {
+  color: #777;
+  font-family: open sans;
+  font-size: 20pt;
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+.single-service p {
+  margin: 0;
+}
+.single-service.middle-border {
+  display: block;
+  position: relative;
+}
+.single-service.middle-border::after {
+  background: #8bc34a none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 130px;
+  left: -18px;
+  position: absolute;
+  right: 0;
+  width: 1px;
+}
+.single-service.middle-border::before {
+  background: #8bc34a none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 130px;
+  position: absolute;
+  right: -11px;
+  width: 1px;
+}

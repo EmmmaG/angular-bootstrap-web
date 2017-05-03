@@ -1,0 +1,81 @@
+.newsletter-area .container-fluid {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.newsletter-content span {
+  color: #8bc34a;
+  float: left;
+  font-size: 50pt;
+  margin-right: 20px;
+}
+.text {
+  display: block;
+  overflow: hidden;
+  padding-top: 12px;
+}
+.newsletter-content .text h3 {
+  font-weight: 700;
+  margin: 0 0 5px;
+}
+.newsletter-content .text p {
+  margin: 0;
+}
+.subcribe-newsletter {
+  padding-top: 17px;
+}
+.subcribe-newsletter input {
+  background: #fff none repeat scroll 0 0;
+  border: 0 solid #eceff8;
+  box-shadow: none;
+  color: #444444;
+  font-size: 12px;
+  font-weight: normal;
+  height: 60px;
+  padding-left: 30px;
+  position: relative;
+  width: 100%;
+}
+.subcribe-newsletter button {
+  background: #8bc34a none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-weight: 700;
+  height: 60px;
+  position: absolute;
+  right: 16px;
+  text-transform: capitalize;
+  width: 249px;
+  top:17px;
+}
+.subcribe-newsletter button:hover{background:#444444;}
+/* Mail Chimp */
+.mailchimp-submitting{color:#31708f}
+.mailchimp-success{color:#3c763d;}
+.mailchimp-error{color:#a94442;}
+
+
+@media (max-width: 1200px) and (min-width: 992px){
+  .newsletter-area .container-fluid {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.subcribe-newsletter button {
+    width: 195px;
+}
+.newsletter-content p{
+  font-size: 13px;
+}
+}
+
+@media (max-width: 767px){
+  .newsletter-area .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.subcribe-newsletter button {
+    height: 50px;
+    margin-top: 20px;
+    position: inherit;
+    width: 180px;
+}
+}

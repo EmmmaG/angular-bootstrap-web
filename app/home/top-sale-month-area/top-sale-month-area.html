@@ -1,0 +1,47 @@
+	<section class="top-sale-month-area ptb-100">
+				<!-- SECTION TITLE -->
+				<div class="section-title style-two text-center mb-115 text-uppercase">
+					<h3>this month’s - top sale</h3>
+				</div>
+				<!-- SECTION TITLE -->
+				<div class="container">
+					<div class="row">
+						<div class="product-gallery owl-carousel owl-theme">
+							<!-- Single Product Start -->
+							<div class="col-xs-12 item col-lg-3 col-md-3 col-sm-6" *ngFor="let topSaleMonthAreaItem of topSaleMonthAreaDatas ">
+								<div class="single-product">
+									<div class="single-img">
+										<a><img [src]="topSaleMonthAreaItem.url" alt="" /></a>
+										<div class="hover-content text-center">
+											<ul>
+												<li><a href="#" class="icon_refresh"></a></li>
+												<li><a href="#" class="icon_cart_alt "></a></li>
+												<li><a href="#" class="icon_heart_alt"></a></li>
+												<li>
+													<a title="Quick View" data-toggle="modal" data-target="#productModal" class="icon_search" (click)="showModal(topSaleMonthAreaItem)"></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="product-details mt-20">
+										<h4><a [routerLink]="['/singleProduct', topSaleMonthAreaItem.id]">{{topSaleMonthAreaItem.name}}</a></h4>
+										<div class="rating-box">
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</div>
+										<div class="price-box">
+											<span class="old-price">{{topSaleMonthAreaItem.oldPrice  }}</span>
+											<span class="new-price"> - {{topSaleMonthAreaItem.newPrice }}</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+				<modal [modalData]="modalData" *ngIf="modalData" (colseFatherModal)="colseFatherModal()"></modal>

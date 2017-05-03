@@ -1,0 +1,54 @@
+  <section class="product-tab-area pt-90 pb-50">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="tab-menu section-titel style-two text-center text-uppercase">
+                <ul>
+                  <li [class.active]="arrival"><a (click)="changeTabs(1)">new arrival </a></li>
+                  <li [class.active]="saler"><a (click)="changeTabs(2)">Best saler</a></li>
+                  <li [class.active]="tranding"><a (click)="changeTabs(3)">tranding</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content">
+              <div id="arrival" class="tab-pane" >
+                <!-- Single Product Start -->
+                <div class="col-md-4 col-sm-6" *ngFor="let productTabAreaItem of productTabAreaDatas">
+                  <div class="single-product style-two mb-50">
+                    <div class="single-img">
+                      <a [routerLink]="['/singleProduct', productTabAreaItem.id]"><img [src]="productTabAreaItem.url" alt="" /></a>
+                      <span class="pro-level" *ngIf="productTabAreaItem.sale">Sale</span>
+                      <span class="pro-level" *ngIf="productTabAreaItem.new">New</span>
+                      <div class="hover-content text-center">
+                        <ul>
+                          <li><a href="#" class="icon_refresh"></a></li>
+                          <li><a href="#" class="icon_cart_alt "></a></li>
+                          <li><a href="#" class="icon_heart_alt"></a></li>
+                          <li>
+                            <a title="Quick View" href="#" data-toggle="modal" data-target="#productModal" class="icon_search"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="product-details mt-20">
+                      <h4><a href="single-product.html">{{productTabAreaItem.name}}</a></h4>
+                      <div class="rating-box">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <div class="price-box">
+                        <span class="old-price">{{productTabAreaItem.oldPrice}}</span>
+                        <span class="new-price"> - {{productTabAreaItem.newPrice}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
