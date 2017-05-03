@@ -1,0 +1,31 @@
+{
+"onsleproAreaData":[
+    {
+        "id": 1,
+        "name": "TOP SALE",
+        "options": [
+           {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/1.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"},
+		   {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/2.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"},
+		   {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/3.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"}
+        ]
+    },
+    {
+        "id": 2,
+        "name": "NEW ARRIVAL",
+        "options": [
+             {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/4.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"},
+			  {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/5.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"},
+            {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/6.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"}
+        ]
+    },
+    {
+        "id": 3,
+        "name": "BEST SALE",
+        "options": [
+               {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/7.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"},
+               {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/8.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"},
+              {"optionName": "SKINY SHIRT WITH LONG","optionType":"SUN-SKIN","optionUrl":"assets/img/onsale/9.jpg","optionOldprice":"$20.00","optionNewprice":"$40.00"}
+        ]
+    }
+]
+}

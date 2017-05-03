@@ -1,0 +1,27 @@
+{
+    "comments":[{
+        "id":1,
+        "date":"October 6, 2014 at 1:38 am",
+        "content":" just a nice post.",
+        "user":"admin",
+        "url":"../assets/img/blog/comment.jpg",
+        "userComment":false,
+        "email":"641470217@qq.com"
+    },{
+        "id":2,
+        "date":"October 6, 2014 at 1:38 am",
+        "content":"just a nice post.",
+        "user":"demo",
+        "url":"../assets/img/blog/comment-2.jpg",
+        "userComment":true,
+        "email":"641470217@qq.com"
+    },{
+        "id":3,
+        "date":"October 6, 2014 at 1:38 am",
+        "content":"just a nice post.",
+        "user":"admin",
+        "url":"../assets/img/blog/comment.jpg",
+        "userComment":false,
+        "email":"641470217@qq.com"
+    }]
+}

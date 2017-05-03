@@ -1,0 +1,79 @@
+{
+"navData":[
+    {
+        "id": 1,
+        "name": "HOME",
+        "hasChild":false,
+        "link":"home",
+        "hideChild":false,
+        "options": [
+       
+        ]
+    },
+    {
+        "id": 2,
+        "name": "ABOUT US",
+        "hasChild":false,
+        "link":"aboutUs",
+         "hideChild":false,
+        "options": [
+           
+        ]
+    },
+    {
+        "id": 3,
+        "name": "SHOP",
+        "hasChild":true,
+        "link":"shop",
+         "hideChild":false,
+        "options": [
+               {"optionName": "SHOP","link":"shop"},
+               {"optionName": "Shop Grid","link":"shopSidebar/shopgrid"},
+               {"optionName": "Shop List","link":"shopSidebar/shoplist"}
+        ]
+    },
+    {
+        "id": 4,
+        "name": "BLOG",
+        "hasChild":false,
+        "link":"blog/bloglist",
+         "hideChild":false,
+        "options": [
+               
+        ]
+    },
+    {
+        "id": 5,
+        "name": "PAGES",
+        "hasChild":true,
+        "link":"pages",
+         "hideChild":false,
+        "options": [
+               {"optionName": "Checkout","link":"checkout"},
+               {"optionName": "Cart","link":"cart"},
+               {"optionName": "Account","link":"account"},
+               {"optionName": "Login","link":"login"}
+        ]
+    },
+    {
+        "id": 6,
+        "name": "PORTFOLIO",
+        "hasChild":false,
+        "link":"portfolio",
+         "hideChild":false,
+        "options": [
+              
+        ]
+    },
+    {
+        "id": 7,
+        "name": "CONTACT",
+        "hasChild":false,
+        "link":"contact",
+         "hideChild":false,
+        "options": [
+            
+        ]
+    }
+]
+}

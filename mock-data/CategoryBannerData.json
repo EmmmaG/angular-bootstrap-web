@@ -1,0 +1,30 @@
+{
+    "CategoryBannerDatas":[{
+        "id":1,
+        "name":"Beauty Cream & Lotion",
+        "smallName":"kajol & eyeliner",
+        "url":"assets/img/category-banner/1.jpg",
+        "linkRouter":"...",
+         "newPrice":"$20.00",
+        "introduce":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla."
+   
+    },{
+        "id":2,
+        "name":"Lipstick & Eye Makeup",
+         "smallName":"kajol & eyeliner",
+        "url":"assets/img/category-banner/2.jpg",
+        "linkRouter":"...",
+         "newPrice":"$20.00",
+        "introduce":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla."
+   
+    },{
+        "id":3,
+        "name":"Night Cream & Perfume",
+         "smallName":"kajol & eyeliner",
+        "url":"assets/img/category-banner/3.jpg",
+        "linkRouter":"...",
+         "newPrice":"$20.00",
+        "introduce":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla."
+   
+    }]
+}

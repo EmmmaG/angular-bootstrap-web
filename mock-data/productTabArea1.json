@@ -1,0 +1,62 @@
+{
+    "productTabAreaDatas":[{
+        "id":1,
+        "name":"Sun Skinkajol & eyeliner",
+        "hasOldPrice":true,
+        "oldPrice":"$30.00",
+        "newPrice":"$20.00",
+        "url":"assets/img/product-tab/1.jpg",
+        "linkRouter":"...",
+        "sale":true,
+        "new":false
+    },{
+        "id":2,
+        "name":"Double site Mirror",
+        "oldPrice":"$15.00",
+        "hasOldPrice":false,
+        "newPrice":"$70.00",
+        "url":"assets/img/product-tab/2.jpg",
+        "linkRouter":"...",
+        "sale":false,
+        "new":true
+    },{
+        "id":3,
+        "name":"Punch Clipkajol & eyeliner",
+        "oldPrice":"$20.00",
+        "newPrice":"$80.00",
+        "url":"assets/img/product-tab/3.jpg",
+        "linkRouter":"...",
+        "sale":false,
+        "new":false
+    },{
+        "id":4,
+        "name":"Beauty BrushBlashan Brush",
+        "oldPrice":"$40.00",
+        "hasOldPrice":false,
+        "newPrice":"$80.00",
+        "url":"assets/img/product-tab/4.jpg",
+        "linkRouter":"...",
+        "sale":false,
+        "new":false
+    },{
+        "id":5,
+        "name":"Beauty Brushkajol & eyeliner",
+        "oldPrice":"$40.00",
+        "hasOldPrice":false,
+        "newPrice":"$80.00",
+        "url":"assets/img/product-tab/5.jpg",
+        "linkRouter":"...",
+        "sale":false,
+        "new":false
+    },{
+        "id":6,
+        "name":"Roberto Cavalli",
+        "oldPrice":"$40.00",
+        "hasOldPrice":false,
+        "newPrice":"$80.00",
+        "url":"assets/img/product-tab/6.jpg",
+        "linkRouter":"...",
+        "sale":false,
+        "new":false
+    }]
+}

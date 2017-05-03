@@ -1,0 +1,39 @@
+{
+    "topSaleMonthAreaDatas":[{
+        "id":1,
+        "name":"Beauty Brush",
+        "smallName":"BLASHAN BRUSH",
+        "oldPrice":"$30.00",
+        "newPrice":"$20.00",
+        "url":"assets/img/product/1.jpg",
+        "linkRouter":"...",
+        "introduce":"mmmmmmm"
+    },{
+        "id":2,
+        "name":"Beauty Face",
+        "smallName":"BLASHAN FACE",
+        "oldPrice":"$15.00",
+        "newPrice":"$70.00",
+        "url":"assets/img/product/2.jpg",
+        "linkRouter":"...",
+        "introduce":"kkkkkkkkk"
+    },{
+        "id":3,
+        "name":"Beauty Puff Cake",
+        "smallName":"EYELINER & KAJOL",
+        "oldPrice":"$20.00",
+        "newPrice":"$80.00",
+        "url":"assets/img/product/3.jpg",
+        "linkRouter":"...",
+        "introduce":"nnnnnnnn"
+    },{
+        "id":4,
+        "name":"Beauty Lipstick",
+        "smallName":"KAJOL & EYELINER",
+        "oldPrice":"$40.00",
+        "newPrice":"$80.00",
+        "url":"assets/img/product/4.jpg",
+        "linkRouter":"...",
+        "introduce":"oooooooo"
+    }]
+}

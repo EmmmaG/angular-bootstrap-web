@@ -1,0 +1,29 @@
+{
+    "cartDatas":[{
+        "id":3,
+        "name":"Vestibulum suscipit",
+        "smallName":"kajol & eyeliner",
+        "hasOldPrice":true,
+        "oldPrice":30.00,
+        "newPrice":20.00,
+        "url":"assets/img/product/3.jpg",
+        "linkRouter":"...",
+        "sale":true,
+        "new":false,
+        "number":10,
+        "introduce":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla."
+    },{
+        "id":4,
+        "name":"Vestibulum dictum magna",
+        "smallName":"Blashan Brush",
+        "oldPrice":"$15.00",
+        "hasOldPrice":false,
+        "newPrice":70.00,
+        "url":"assets/img/product/4.jpg",
+        "linkRouter":"...",
+        "sale":false,
+        "new":true,
+        "number":2,
+        "introduce":"Lorem ipsum dolor tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc tation ullamco labori ut aliquip ex ea commodo consequat."
+    }]
+}
