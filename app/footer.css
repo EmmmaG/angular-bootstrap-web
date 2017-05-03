@@ -1,0 +1,99 @@
+.address-area > p {
+  font-size: 12pt;
+}
+.address-area > a {
+  color: #8bc34a;
+  display: inline-block;
+  font-size: 20pt;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.contact-social ul li a {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 100%;
+  color: #8bc34a;
+  display: block;
+  font-size: 15pt;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 8px;
+  text-align: center;
+  width: 40px;
+  transition:.4s;
+}
+.contact-social ul li a:hover{background:#8bc34a;color:#fff;}
+.footer-menu > h4 {
+  color: #333333;
+  font-family: "Exo 2",sans-serif;
+  font-size: 16pt;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0 0 28px;
+}
+.footer-menu li {
+  display: block;
+  border-bottom:1px solid #fff;
+}
+.footer-menu ul li a {
+  color: #333333;
+  display: block;
+  font-size: 12pt;
+  overflow: hidden;
+  padding: 8px 0;
+  transition: .3s;
+}
+.footer-menu ul li:last-child a{
+  padding:0;
+  padding-top:8px;
+}
+.footer-menu ul li:last-child {
+  border-bottom: 0 none;
+}
+.contact-details ul li {
+  border: medium none;
+}
+.contact-details ul li span {
+  color: #8bc34a;
+  float: left;
+  font-size: 15pt;
+  margin-right: 12px;
+}
+.contact-details p {
+  color: #333;
+  font-size: 12pt;
+}
+.footer-menu ul li a:hover{color:#8bc34a;}
+.footer-bottom-area p {
+  color: #fff;
+  font-size: 12pt;
+  margin-bottom: 0;
+  padding: 17px 0;
+}
+.footer-bottom-area p a{
+  color:#8bc34a;
+}
+.footer-bottom-area p a:hover{
+  color:#fff;
+}
+.footer-bottom-area img {
+  float: right;
+  padding: 15px 0;
+}
+#scrollUp {
+    background: #8bc34a none repeat scroll 0 0;
+    border-radius: 0px;
+    bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    color: #fff;
+    font-size: 28px;
+    height: 40px;
+    line-height: 35px;
+    position: fixed;
+    right: 15px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+    z-index: 200;
+}

@@ -1,0 +1,52 @@
+.logo img{
+  position: absolute;
+    height: 30px;
+    padding: 0px 10px; 
+}
+
+.mainmenu {
+  background-color: #8bc34a;
+}
+
+.mainmenu ul > li > a {
+  color: #eeeeee;
+  display: block;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 18px;
+  font-weight: 50;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s
+}
+
+.mainmenu ul li a:hover,
+.mainmenu ul li a:focus,
+.mainmenu ul li a:active,
+.mainmenu ul li a.active { 
+  color:#545C5F;
+  background-color: #70A436;
+}
+
+.mainmenu ul li >  ul{
+  box-shadow: 2px 0 7px 0 rgba(0, 0, 0, 0.13);
+  background: #ffffff none repeat scroll 0 0;
+  margin: 0;
+  padding: 5px;
+  text-align: left;
+  transition: all 0.5s ease 0s;
+  width: 100px;
+  z-index: -9999;
+  border-top: 4px solid #8bc34a;
+}
+
+.mainmenu ul li ul > li > a {
+  color: #303030;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.mainmenu ul li ul li a:hover{color:#8bc34a;padding-left: 14px;}
+
+
+.dark-gray-bg { background: #e9ebee;}
